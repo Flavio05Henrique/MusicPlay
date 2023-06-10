@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music | player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-body>
+    <section class="playlists" data-play-list-section>
+        <h2 class="music_list_titulo color_playLists">
+            Suas playlists
+        </h2>
+        <div class="card_play_list-container" data-play-list-container>
+            <div class="scroll_control" data-scroll-control>
+                <div class="card_play_list-item card_play_list_active" data-card-play-list-item-default>
+                    <h3 class="card_play_list-titulo">
+                        Todas as musicas 
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="playlists-controller">
+            <button class="playlists-bnt_new_playList" data-open-playlist-create>Criar playList</button>
+        </div>
+    </section>
+    <section class="musics_list" >
+        <h2 class="music_list_titulo color_music_list">
+            Suas musicas 
+            <button class="change_music_player" data-change-music-player><div></div></button>
+        </h2>
+        <button class="bnt_open_volume_control" data-open-volume-control>
+            <div class="volume_control_floating" data-volume-control-floating>
+                <div class="volume_control" >
+                    <div class="volume_icon"></div>
+                    <div class="volume_bar" data-control-bar-tipe="volume">
+                        <div class="volume_bar_mask" data-control-bar-mask></div>
+                        <div class="volume_bar_fill" data-control-bar-fill></div>
+                        <div class="volume_point"></div>
+                    </div>
+                </div>
+            </div>
+        </button>
+        <div class="music_card_conatiner music_card_conatiner_scroll_active" data-music-cards-container>
+        
+        </div>
+    </section>
+    <div class="floating_card" data-floating-card>
+        
+    </div>
+    <script src="saveLocal.js"></script>
+    <script src="musicPlayer.js"></script>
+    <script src="playList.js"></script>
+</body>
+</html>

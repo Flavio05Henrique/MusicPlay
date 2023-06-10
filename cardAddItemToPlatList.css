@@ -1,0 +1,104 @@
+.card_add_to_play_list-close_bnt {
+    width: 25px;
+    height: 25px;
+    border: none;
+    background: no-repeat center center url(img/icons/xmark-solid.svg);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3rem;
+    position: absolute;
+    top: 5px;
+    left: 93%;
+}
+
+.card_add_to_play_list {
+    width: 500px;
+    height: 450px;
+    background-color: rgb(111, 0, 255);
+    animation: card_add_to_play_list-open .5s;
+}
+
+.card_add_to_play_list-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 18%;
+    background-color: rgb(74, 74, 158);
+    position: relative;
+}
+
+.card_add_to_play_list-title > h3 {
+    font-size: 4rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.card_add_to_play_list-container {
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 82%;
+    background-color: rgb(22, 95, 179);
+}
+
+.card_add_to_play_list-item {
+    display: grid;
+    grid-template-columns: 8fr 1fr;
+    align-items: center;
+    width: 90%;
+    height: 50px;
+    margin: 15px 0;
+    padding: 5px;
+    background-color: rgb(74, 74, 158);
+    position: relative;
+} 
+
+.card_add_to_play_list-item_titulo {
+    margin-left: 10px;
+    font-size: 1.9rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 800;
+}
+
+.card_add_to_play_list-add_bnt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    font-size: 3rem;
+}
+
+.card_add_to_play_list-add_bnt:hover {
+    background-color: rgb(59, 216, 164);
+} 
+
+.card_add_to_play_list-add_bnt:active {
+    width: 28px;
+    height: 28px;
+    font-size: 2.8rem;
+    margin: 1px;
+}
+
+@keyframes card_add_to_play_list-open{
+    0%{
+        margin-left: -25%;
+        opacity: 0%;
+    }
+    100%{
+        margin-left: 0%;
+        opacity: 100%;
+    }
+}
+
+@keyframes card_add_to_play_list-close{
+    0%{
+    }
+    100%{
+        margin-left: 25%;
+        opacity: 0%;
+    }
+}

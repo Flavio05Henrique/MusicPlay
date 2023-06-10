@@ -1,0 +1,44 @@
+.form_create_playlist {
+    display: flex;
+    width: 500px;
+    background-color: rgb(74, 74, 158);
+    flex-direction: column;
+}
+
+.form_create_playlist > label {
+    width: 100%;
+    margin-bottom: 25px;
+    background-color: rgb(111, 0, 255);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.form_create_playlist > input {
+    width: 90%;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 10px;
+    align-self: center;
+}
+
+.form_create_playlist-bnt_container {
+    align-self: center;
+    margin-bottom: 25px;
+}
+
+.form_create_playlist-bnt {
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 3px;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.form_create_playlist-bnt_submit:hover {
+    background-color: rgb(58, 218, 58);
+}
+
+.form_create_playlist-bnt_cancelar:hover {
+    background-color: rgb(223, 57, 57);
+}

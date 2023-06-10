@@ -1,0 +1,210 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url(musicCard.css);
+@import url(musicCardFull.css);
+@import url(volumeControl.css);
+@import url(cardPlayList.css);
+@import url(cardAddItemToPlatList.css);
+@import url(cardCreatePlayList.css);
+@import url(confirm.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.8rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    display: flex;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+.playlists {
+    display: grid;
+    grid-template-rows: 1fr 8fr 1fr;
+    width: 35vw;
+    height: 100vh;
+    background-color: rgb(84, 4, 150);
+}
+
+.musics_list {
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+    width: 65vw;
+    height: 100vh;
+    background-color: rgb(155, 79, 165);
+}
+
+.music_list_titulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(87, 52, 94);
+    font-size: 45px;
+    font-weight: 500;
+    color: rgb(219, 90, 245);
+}
+
+.change_music_player {
+    width: 50px;
+    height: 28px;
+    padding: 3px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.change_music_player div {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(10, 10, 10);
+    border-radius: 100%;
+    
+    transition: .5s;
+    margin-left: 0%;
+}
+
+.bnt_slid {
+    background-color: rgb(199, 56, 135);
+}
+
+.bnt_slid div {
+    transition: .5s;
+    margin-left: 50%;
+}
+
+.color_playLists {
+    background-color: rgb(63, 52, 94);
+    color: rgb(144, 90, 245);
+}
+
+.color_muscic_list {
+    background-color: rgb(87, 52, 94);
+    color: rgb(219, 90, 245);
+}
+
+
+
+.music_card_bnt {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    border: none;
+}
+
+.music_card_bnt:hover {
+    cursor: pointer;
+}
+
+.previous {
+    background: url(img/icons/backward-solid.svg) no-repeat center center;
+}
+
+.play {
+    background: url(img/icons/play-solid.svg) no-repeat center center;
+}
+
+.pause {
+    background: url(img/icons/pause-solid.svg) no-repeat center center;
+}
+
+.next {
+    background: url(img/icons/forward-solid.svg) no-repeat center center;
+}
+
+.add {
+    background: url(img/icons/plus-solid.svg) no-repeat center center;
+}
+
+.repeat {
+    width: 30px;
+    background:url(img/icons/repeat.png) no-repeat center center;
+    background-size: 25px;
+}
+
+.repeat1{
+    width: 30px;
+    background:url(img/icons/repeat1.png) no-repeat center center;
+    background-size: 25px;
+}
+
+.noRepeat {
+    width: 30px;
+    height: 30px;
+    background:url(img/icons/arrow-right-solid.svg) no-repeat center center;
+    background-size: 25px;
+}
+
+.delete {
+    background:url(img/icons/trash-can-regular.svg) no-repeat center center;
+}
+
+.delete:hover {
+    background:url(img/icons/trash-can-solid.svg) no-repeat center center;
+}
+
+.opacity_bnt {
+    opacity: 30%;
+}
+
+.music_player_controus {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid rgb(92, 31, 107);
+}
+
+.mensagem { 
+    width: 800px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(50, 50, 134, 0.473);
+    position: absolute;
+    top: 10px;
+}
+
+.mensagem_texto {
+    color: white;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+}
+
+.faded {
+    transition: .5s;
+    opacity: 0;
+}
+
+.floating_card {
+    position: absolute;
+}
+
+
+.black_background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.418);
+}
+
+

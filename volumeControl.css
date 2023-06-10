@@ -1,0 +1,86 @@
+.bnt_open_volume_control {
+    width: 100px;
+    height: 50px;
+    border-radius: 150px 150px 0 0 ;
+    background-color: rgb(87, 52, 94);
+    background: rgb(87, 52, 94) no-repeat bottom center url(img/icons/volume-high-solid.svg);
+    background-size: 30px;
+    border: none;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 82px;
+    left: 89%;
+    z-index: 100;
+}
+
+.bnt_open_volume_control:hover {
+    cursor: pointer;
+}
+
+.volume_control_floating{
+    display: none;
+    position: absolute;
+    z-index: 100;
+    transform: translateY(-100%) translateX(100%);
+}
+
+.open_volume_control {
+    display: block;
+}
+
+.volume_control {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 30px;
+    height: 250px;
+    padding-bottom: 10px;
+    background: linear-gradient(to bottom, rgb(111, 55, 201), rgb(87, 52, 94));
+    border-radius: 50px;
+}
+
+.volume_bar {
+    width: 10px;
+    height: 80%;
+    margin: 15px 0 0 0;
+    background-color: rgb(223, 43, 148);
+    border-radius: 50px;
+    position: relative;
+}
+
+.volume_bar_fill {
+    width: 100%;
+    max-height: 100%;
+    height: 50%;
+    border-radius: 50px;
+    background-color: rgb(70, 160, 155);
+}
+
+.volume_point{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(31, 41, 94);
+    border-radius: 100%;
+    transform: translateX(-5px) translateY(-10px);
+}
+
+/* .volume_icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 100%;
+    background: no-repeat center center url(img/icons/volume-high-solid.svg);
+    background-size: 20px;
+} */
+
+.volume_bar_mask {
+    width: 30px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    border-radius: 50px;
+    /* background-color: beige; */
+    transform: translateX(-10px);
+}

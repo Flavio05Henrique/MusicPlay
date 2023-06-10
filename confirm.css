@@ -1,0 +1,37 @@
+.confirm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+    background-color: rgb(74, 74, 158);
+    position: relative;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.411);
+}
+
+.confirm-titulo {
+    position: absolute;
+    top: -20px;
+    font-size: 4rem;
+    color: rgb(236, 74, 74);
+}
+
+.confirm-bnt {
+    width: 120px;
+    height: 50px;
+    margin-left: 15px;
+    border: none;
+    background-color: rgb(22, 95, 179);
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.confirm-bnt_yes:hover {
+    background-color: rgb(58, 218, 58);
+}
+
+.confirm-bnt_no:hover {
+    background-color: rgb(223, 57, 57);
+}
+
